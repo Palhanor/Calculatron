@@ -13,7 +13,7 @@ export default function Botao({ valor, onClick }: IBotao) {
 
   return (
     <li className={`container_botao ${fundir}`}>
-      <button className={`botao ${cor()}`} onClick={onClick}>
+      <button className={`botao ${cor()}`} onClick={() => onClick(valor)}>
         {valor}
       </button>
     </li>
