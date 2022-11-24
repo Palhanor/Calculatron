@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Calculatron/static/css/main.1c84a7f8.css",
+    "main.js": "/Calculatron/static/js/main.a3ea2d46.js",
+    "index.html": "/Calculatron/index.html",
+    "main.1c84a7f8.css.map": "/Calculatron/static/css/main.1c84a7f8.css.map",
+    "main.a3ea2d46.js.map": "/Calculatron/static/js/main.a3ea2d46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c84a7f8.css",
+    "static/js/main.a3ea2d46.js"
+  ]
+}
