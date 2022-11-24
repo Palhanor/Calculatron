@@ -1,0 +1,49 @@
+.page {
+    box-sizing: border-box;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 1.5rem 2rem;
+    margin: auto;
+    background-color: white;
+}
+
+.display {
+    height: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 3rem;
+    line-height: 10rem;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.botoes {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.backspace {
+    width: 80px;
+    filter: opacity(.7);
+    margin-bottom: -10px;
+}
+
+@media screen and (min-width: 998px) {
+    .page {
+        border-radius: 20px;
+        max-width: 428px;
+        max-height: 836px;
+        margin-top: 50px;
+        border: 2px solid rgb(201, 211, 219);
+    }
+}
