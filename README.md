@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+<img src="./public/assets/favicon.png" alt="Logo do Calculatron" width="68" style="display: block; margin: 20px auto;" />
+<h1 style="text-align: center;">Calculatron</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para realizar o desafio proposto de criar uma calculadora com React, eu fiz uso do TypeScript e do SCSS, para assim criar um sistema mobile-first e responsivo que consegue fazer calculos de expressões matemáticas encadeadas. O sistema conta com todo os dígitos numéricos (0-9), operações básicas (soma, subtração, multiplicação e divisão), ponto, parênteses e funções de limpar, apagar e executar operação.
 
-## Available Scripts
+Para executar as operações, eu fiz uso da função nativa eval(), de tal forma que qualquer operação matemática válida pode ser executada através da interface da calculadora. Contudo, foram implementados diversos sistemas de controle de exceção para evitar quebra no sistema ao processar operações indevidas. Infelizmente não consegui cobrir todos os erros, então ainda é possível encontrar alguns bugs em casos específicos de uso.
 
-In the project directory, you can run:
+---
+## Tratamentos
 
-### `npm start`
+Considerando os riscos atrlados ao uso do eval(), resolvi não usar um input para a exibição das operações e resultados. Além disso, como não há comunicação com um sistema back-end, também não há risco de injeção de dados indevidos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Além disso, busquei mitigar problemas com o uso de parênteses vazios, execução de um operador, campo vazio, operador no começo ou no final da operação, parênteses sem fechamento e a combinação de operadores.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+## Próximos passos
 
-### `npm test`
+Apesar da quantidade de tratamentos já realizados, ainda faltam muitos outros, como por exemplo: inserir o operador de multiplicação em operações como x(y), uso indevido do ponto, tratar parênteses inseridos em ordem indevida ")(" entre outros casos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ainda, pretende-se desenvolver novas ferramentas para melhorar a experiência de uso, como o reconhecimento de entradas com o teclado, separação entre campo de operação e campo de resultado no display e ajuste dinâmico do tamanho da fonte no display em caso de muitos caracteres.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Código fonte**: https://github.com/Palhanor/Calculatron
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Projeto funcional**: https://palhanor.github.io/Calculatron/
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img src="./public/assets/screenshot.jpg" alt="Screenshot da tela do WebApp" width="200" style="display: block; margin: 20px auto;" />
